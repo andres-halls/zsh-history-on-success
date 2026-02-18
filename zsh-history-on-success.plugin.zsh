@@ -1,4 +1,4 @@
-function zshaddhistory() {
+function _zsh-history-on-success-addhistory() {
   # Removes trailing newline characters from command
   LASTHIST="${1%%$'\n'}"
   # Return value 2: "... the history line will be saved on the internal
@@ -55,3 +55,6 @@ preexec_functions=($preexec_functions _custom_preexec)
 # appends to precmd_functions so we don't overwrite another plugin's precmd function
 [[ -z $precmd_functions ]] && precmd_functions=()
 precmd_functions=($precmd_functions _custom_precmd)
+
+autoload -Uz add-zsh-hook
+add-zsh-hook zshaddhistory _zsh-history-on-success-addhistory
