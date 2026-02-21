@@ -16,7 +16,7 @@ The original code was written by [Dean Scarff](https://github.com/p00ya) from th
 Run this command to install this plugin if you are using [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh).
 
 ```bash
-git -C "${ZSH_CUSTOM:-${ZSH:-$HOME/.oh-my-zsh}/custom}/plugins" clone --depth=1 https://github.com/nyoungstudios/zsh-history-on-success
+git -C "${ZSH_CUSTOM:-${ZSH:-$HOME/.oh-my-zsh}/custom}/plugins" clone --depth=1 https://github.com/andres-halls/zsh-history-on-success
 ```
 
 ## Configuration
